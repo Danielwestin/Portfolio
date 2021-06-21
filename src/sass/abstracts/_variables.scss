@@ -1,0 +1,48 @@
+/************************** COLOURS **************************/
+
+$color-gray-dark: #433e49;
+$color-gray-light: #928490;
+$color-beige: #dbc1ad;
+$color-beige-light: #f3e8eb;
+$color-white: #fff;
+$color-black: #000;
+$color-text: #252525;
+$color-gray: #ededed;
+$color-background: #f4f4f4;
+$color-gray-darkish: #e6e6e6;
+$color-gray-dot: #c4c4c6;
+$color-nav-bg: rgba(0, 43, 76, 0.9);
+$color-white-line: rgba(255, 255, 255, 0.3);
+$color-gray-pages: #c1c1c1;
+
+/************************** SHADOWS **************************/
+
+$shadow-nine: 0 1rem 2rem rgba(0, 0, 0, 0.9);
+$shadow-eight: 0 1rem 2rem rgba(0, 0, 0, 0.8);
+$shadow-seven: 0 1rem 2rem rgba(0, 0, 0, 0.7);
+$shadow-six: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+$shadow-five: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+$shadow-four: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+$shadow-three: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+$shadow-two: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+$shadow-one: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+$shadow-cookie: 0 -1rem 2rem rgba(0, 0, 0, 0.3);
+$shadow-slider: 0 1rem 1.5rem -0.4rem rgba(0, 0, 0, 0.6);
+$shadow-navigation: 0px 3px 6px 0px rgba(0, 0, 0, 0.4);
+$shadow-footer: 0 -1rem 10rem 1rem rgba(0, 0, 0, 0.3);
+$shadow-navLinks: 0px 8px 20px #00000029;
+
+/************************** RESPONSIVE BREAKPOINTS **************************/
+
+$bp-XXXXL: 120em;
+$bp-XXXL: 105em;
+$bp-XXL: 95em;
+$bp-XL: 75em; // 1200px
+$bp-L: 64em; // ~1000px
+$bp-M: 50em; // 800px;
+$bp-MS: 40em;
+$bp-S: 37.5em; // 600px;
+$bp-MS: 32.5em;
+$bp-SS: 29.5em;
+$bp-XS: 25em; // 400px;
+$bp-XXS: 20em;

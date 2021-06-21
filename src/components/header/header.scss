@@ -1,0 +1,87 @@
+$font-size: 2.5rem;
+
+.header-nav {
+  padding: 0 5rem;
+  height: 100%;
+  // background: red;
+  display: flex;
+
+  &__name {
+    // background-color: rebeccapurple;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    font-size: $font-size;
+  }
+
+  &__ul {
+    // background: green;
+    padding-right: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    flex: 4;
+
+    &__li {
+      padding: 0.5rem 5rem;
+      // background: pink;
+
+      &:nth-child(1) {
+        a::after {
+          background-color: #f3c12f;
+        }
+      }
+      &:nth-child(2) {
+        a::after {
+          background-color: #b49a86;
+        }
+      }
+      &:nth-child(3) {
+        a::after {
+          background-color: #d1d1d1;
+        }
+      }
+
+      &__navlink {
+        text-decoration: none;
+        font-size: $font-size;
+        font-weight: bolder;
+        position: relative;
+        z-index: 1;
+        text-transform: uppercase;
+
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: black;
+          width: 0%;
+          height: 4px;
+          top: 50%;
+          right: -10%;
+          transform: translateX(0%);
+          bottom: -5%;
+          transition: all 500ms ease;
+          z-index: -1;
+        }
+
+        &:hover::after {
+          left: -10%;
+          width: 120%;
+        }
+
+        &--active {
+          color: $color-black;
+
+          &::after {
+            width: 120%;
+          }
+        }
+        &--inactive {
+          color: $color-gray-dark;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.introScreen-wrapper {
+  //   background: $color-gray-light;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3c12f;
+  background: #b49a86;
+  background: #24231d;
+  overflow: hidden;
+
+  &__column {
+    height: 100%;
+    width: 100vw;
+    flex: 1;
+    // margin: 1px;
+    background-color: black;
+
+    &:nth-child(1) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media only screen and (max-width: $bp-L) {
+        flex: 1;
+      }
+      @media only screen and (max-width: $bp-M) {
+        flex: 1;
+      }
+      @media only screen and (max-width: $bp-S) {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media only screen and (max-width: $bp-L) {
+        flex: 2;
+      }
+      @media only screen and (max-width: $bp-M) {
+        flex: 2;
+      }
+      @media only screen and (max-width: $bp-S) {
+        width: 100%;
+      }
+    }
+
+    &:nth-child(3) {
+      @media only screen and (max-width: $bp-L) {
+        flex: 1;
+      }
+      @media only screen and (max-width: $bp-M) {
+        flex: 1;
+      }
+      @media only screen and (max-width: $bp-S) {
+        display: none;
+      }
+    }
+  }
+  &--h1 {
+    position: absolute;
+    font-size: 10rem;
+    //   transform: rotate(-45deg);
+    font-family: "Prata", Serif;
+    width: 50%;
+    background: none;
+    text-align: center;
+    color: #f4f4f4;
+    mix-blend-mode: difference;
+
+    @media only screen and (max-width: $bp-S) {
+      width: 75%;
+    }
+
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      width: 100%;
+      height: 0%;
+      left: 0;
+      color: #f4f4f4;
+      background: black;
+      border-bottom: solid 1px black;
+      overflow: hidden;
+      animation: namePresentation 1.5s linear forwards;
+      animation-delay: 1s;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+
+      @media only screen and (max-width: $bp-M) {
+        font-size: 8rem;
+      }
+      @media only screen and (max-width: $bp-S) {
+        font-size: 6rem;
+      }
+    }
+  }
+}
+
+@keyframes namePresentation {
+  0%,
+  10% {
+    height: 0%;
+  }
+  50%,
+  70%,
+  100% {
+    border-bottom: solid 1px #f4f4f4;
+    height: 90%;
+  }
+}

@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import Header from "./components/header";
+import { useRoutes } from "react-router-dom";
+import { routes } from "./routes";
+import IntroScreen from "./components/ux/introScreen";
+import { Borders } from "./components/borders";
 
 function App() {
+  const element = useRoutes(routes);
+  console.log(element);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <IntroScreen /> */}
+      <Borders>{element}</Borders>
+    </>
   );
 }
 
